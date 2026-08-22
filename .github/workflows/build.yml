@@ -32,7 +32,7 @@ jobs:
         echo '#!/bin/bash' > gradlew
         echo 'exec "$(dirname "$0")/gradle/wrapper/gradle-7.5-bin.zip" "$@"' >> gradlew
         chmod +x gradlew
-        
+         
     - name: Download Gradle
       run: |
         wget https://services.gradle.org/distributions/gradle-7.5-bin.zip -O gradle-7.5-bin.zip
